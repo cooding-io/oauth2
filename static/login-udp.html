@@ -1,450 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login Docencia EIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 
-    <!-- Prevent the demo from appearing in search engines (REMOVE THIS) -->
-    <meta name="robots" content="noindex">
+    <link rel="icon" href="">
 
-    <!-- Perfect Scrollbar -->
-    <link type="text/css" href="/oauth2/assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+    <title>Cooding </title>
+  
 
-    <!-- Material Design Icons -->
-    <link type="text/css" href="/oauth2/assets/css/material-icons.css" rel="stylesheet">
-    <link type="text/css" href="/oauth2/assets/css/material-icons.rtl.css" rel="stylesheet">
+	<link rel="stylesheet" href="/login/assets/css/vendors_css.css">
+	  
+	<!-- Style-->  
+	<link rel="stylesheet" href="/login/assets/css/style.css">
+	<link rel="stylesheet" href="/login/assets/css/skin_color.css">	
+	<style>
 
-    <!-- Font Awesome Icons -->
-    <link type="text/css" href="/oauth2/assets/css/fontawesome.css" rel="stylesheet">
-    <link type="text/css" href="/oauth2/assets/css/fontawesome.rtl.css" rel="stylesheet">
+.google {
+  background-color: #dd4b39;
+  color: white;
 
-    <!-- App CSS -->
-    <link type="text/css" href="/oauth2/assets/css/app.css" rel="stylesheet">
-    <link type="text/css" href="/oauth2/assets/css/app.rtl.css" rel="stylesheet">
-
-
-
-    <style>
- 
- .docencia {
-    background-color: white;
-    color: black;
 }
-.docencia a{
-    color: black;
-}
-        </style>
 
 
+.google > a { color: #00FF00; } 
 
+		</style>
 
 
 </head>
-
-<body class=" fixed-layout">
-
-
-
-
-
-
-
-
-
-
-
-    <div class="preloader">
-        <div class="sk-double-bounce">
-            <div class="sk-child sk-double-bounce1"></div>
-            <div class="sk-child sk-double-bounce2"></div>
-        </div>
-    </div>
-
-    <!-- Header Layout -->
-    <div class="mdk-header-layout js-mdk-header-layout">
-
-        <!-- Header -->
-
-        <div id="header" class="mdk-header bg-dark js-mdk-header m-0" data-fixed data-effects="waterfall">
-            <div class="mdk-header__content">
-
-                <!-- Navbar -->
-                <nav id="default-navbar" class="docencia navbar navbar-expand   m-0">
-                    <div class="container">
-                        <!-- Brand -->
-                        <a href="/" class="navbar-brand">
-                            <img height="50px"  src="/assets/images/logo/udp.png" class="mr-2" alt="LearnPlus" />
-                            <span class="d-none d-xs-md-block">Docencia EIT</span>
-                        </a>
-
-                        <!-- Search -->
-                        <!-- <form class="search-form d-none d-md-flex">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <button class="btn" type="button"><i
-                                    class="material-icons font-size-24pt">search</i></button>
-                        </form> -->
-                        <!-- // END Search -->
-
-                        <div class="flex"></div>
-
-                        <!-- Menu -->
-                        <ul class="nav navbar-nav flex-nowrap d-none d-lg-flex">
-                            <li class="nav-item">
-                                <a class="nav-link" href="fixed-student-forum.html">¿Ayuda?</a>
-                            </li>
-
-                        </ul>
-
-                        <!-- Menu -->
-                        <ul class="nav navbar-nav flex-nowrap">
-
-
-
-                            <!-- Notifications dropdown -->
-                            <li class="nav-item dropdown dropdown-notifications dropdown-menu-sm-full">
-                                <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown"
-                                    data-dropdown-disable-document-scroll data-caret="false">
-                                    <i class="material-icons">notifications</i>
-                                    <span class="badge badge-notifications badge-danger">0</span>
-                                </button>
-
-                            </li>
-                            <!-- // END Notifications dropdown -->
-                            <!-- User dropdown -->
-
-                            <!-- // END User dropdown -->
-
-                        </ul>
-                        <!-- // END Menu -->
-                    </div>
-                </nav>
-                <!-- // END Navbar -->
-
-            </div>
-        </div>
-
-        <!-- // END Header -->
-
-        <!-- Header Layout Content -->
-        <div class="mdk-header-layout__content d-flex flex-column">
-
-            <div class="page__header">
-                <div class="navbar bg-dark navbar-dark navbar-expand-sm d-none2 d-md-flex2">
-                    <div class="container">
-
-                        <div class="navbar-collapse collapse" id="navbarsExample03">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item dropdown ">
-                                    <a href="#" class="nav-link " data-toggle="dropdown">Mis Cursos</a>
-
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link ">Apps</a>
-
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link ">RoadMap</a>
-
-                                </li>
-                                <li class="nav-item dropdown active">
-                                    <a href="#" class="nav-link " data-toggle="dropdown">Mi Cuenta</a>
-
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarsExample03"
-                            type="button">
-                            <span class="material-icons">menu</span>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="page ">
-
-                <div class="container page__container">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                        <li class="breadcrumb-item">Iniciar sesión</li>
-                    </ol>
-                    <h1 class="h2">Iniciar Sesión</h1>
-                    <div class="row">
-                 
-                        <div class="col-md-6">
-                            <div class="card card-body">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h4 class="card-title">Ingresar con cuenta correo</h4>
-                                        <p>Ingresa directamente con tu correo educacional</p>
-                                    </div>
-                                    <div class="col-lg-6 d-flex align-items-center">
-                                        <div class="btn   btn-white white darken-6 col s12"><a
-                                                href="/oauth2/login/google/login" style="text-transform: none;">
-                                                <div class="left"><img width="30px" alt="Google &quot;G&quot; Logo"
-                                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png">
-                                                </div>Ingresar con Google
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card-body" style="display: none;">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <h4 class="card-title">Crear una nueva cuenta</h4>
-                                <p>Crea una cuenta para acceder a la red enseña.cl .</p>
-                            </div>
-                            <div class="col-lg-8 d-flex align-items-center">
-                                <form class="flex row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group"><label class="form-label"
-                                                for="exampleInputEmail1">Nombre</label><input type="email"
-                                                class="form-control" id="exampleInputEmail1"
-                                                placeholder="Enter your email address .."></div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group"><label class="form-label"
-                                                for="exampleInputPassword1">Apellido</label><input type="password"
-                                                class="form-control" id="exampleInputPassword1"
-                                                placeholder="Enter your password .."></div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group"><label class="form-label"
-                                                for="exampleInputEmail1">Correo</label><input type="email"
-                                                class="form-control" id="exampleInputEmail1"
-                                                placeholder="Enter your email address .."></div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group"><label class="form-label"
-                                                for="exampleInputPassword1">Contraseña</label><input type="password"
-                                                class="form-control" id="exampleInputPassword1"
-                                                placeholder="Enter your password .."></div>
-                                    </div><button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container page__container">
-                    <div class="footer">
-                        Copyright &copy; 2021 ; Powered by Enseña.cl ♥️💕
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- // END Header Layout Content -->
-
-    </div>
-    <!-- // END Header Layout -->
-
-
-
-
-
-
-
-
-
-    <!-- App Settings FAB -->
-    <div id="app-settings">
-        <app-settings layout-active="fixed" :layout-location="{
-      'fixed': 'fixed-student-dashboard.html',
-      'default': 'student-dashboard.html'
-    }" sidebar-variant="bg-transparent border-0"></app-settings>
-    </div>
-    <!-- jQuery -->
-    <script src="assets/vendor/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/vendor/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap.min.js"></script>
-
-    <!-- Perfect Scrollbar -->
-    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
-
-    <!-- MDK -->
-    <script src="assets/vendor/dom-factory.js"></script>
-    <script src="assets/vendor/material-design-kit.js"></script>
-
-    <!-- App JS -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Highlight.js -->
-    <script src="assets/js/hljs.js"></script>
-
-    <!-- App Settings (safe to remove) -->
-    <script src="assets/js/app-settings.js"></script>
-
-
-
-
-
-
-    <!-- Global Settings -->
-    <script src="assets/js/settings.js"></script>
-
-    <!-- Moment.js -->
-    <script src="assets/vendor/moment.min.js"></script>
-    <script src="assets/vendor/moment-range.min.js"></script>
-
-    <!-- Chart.js -->
-    <script src="assets/vendor/Chart.min.js"></script>
-
-    <!-- UI Charts Page JS -->
-    <script src="assets/js/chartjs-rounded-bar.js"></script>
-    <script src="assets/js/chartjs.js"></script>
-
-    <!-- Chart.js Samples -->
-    <script>
-        (function () {
-            'use strict';
-
-            Charts.init()
-
-            var earnings = []
-
-            // Create a date range for the last 7 days
-            var start = moment().subtract(6, 'days').format('YYYY-MM-DD') // 7 days ago
-            var end = moment().format('YYYY-MM-DD') // today
-            var range = moment.range(start, end)
-
-            // Create the earnings graph data
-            // Iterate the date range and assign a random ($) earnings value for each day
-            range.by('days', function (moment) {
-                earnings.push({
-                    y: Math.floor(Math.random() * 200) + 15,
-                    x: moment.toDate()
-                })
-            })
-
-            var WeekIQChart = function (id, type = 'line', options = {}) {
-                options = Chart.helpers.merge({
-                    elements: {
-                        point: {
-                            pointStyle: 'circle',
-                            radius: 4,
-                            hoverRadius: 5,
-                            backgroundColor: settings.colors.white,
-                            borderColor: settings.colors.primary[500],
-                            borderWidth: 2
-                        }
-                    },
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                display: false
-                            }
-                        }],
-                        xAxes: [{
-                            gridLines: {
-                                display: false
-                            },
-                            type: 'time',
-                            distribution: 'series',
-                            time: {
-                                unit: 'day',
-                                stepSize: 1,
-                                autoSkip: false,
-                                displayFormats: {
-                                    day: 'dd'
-                                }
-                            }
-                        }]
-                    },
-                    tooltips: {
-                        callbacks: {
-                            label: function (a, e) {
-                                var t = e.datasets[a.datasetIndex].label || "",
-                                    o = a.yLabel,
-                                    r = "";
-                                return 1 < e.datasets.length && (r += '<span class="popover-body-label mr-auto">' + t + "</span>"), r += '<span class="popover-body-value">' + o + " points</span>"
-                            }
-                        }
-                    }
-                }, options)
-
-                var data = {
-                    datasets: [{
-                        label: "Experience IQ",
-                        data: earnings,
-                        pointHoverBorderColor: settings.colors.success[400],
-                        pointHoverBackgroundColor: settings.colors.white
-                    }]
-                }
-
-                Charts.create(id, type, options, data)
-            }
-
-            var TopicIQChart = function (id, type = 'radar', options = {}) {
-                options = Chart.helpers.merge({
-                    elements: {
-                        point: {
-                            pointStyle: 'circle',
-                            radius: 4,
-                            hoverRadius: 5,
-                            backgroundColor: settings.colors.white,
-                            borderColor: settings.colors.primary[500],
-                            borderWidth: 2
-                        }
-                    },
-                    scale: {
-                        ticks: {
-                            display: false,
-                            beginAtZero: true,
-                            maxTicksLimit: 4
-                        },
-                        gridLines: {
-                            color: settings.colors.gray[300]
-                        },
-                        angleLines: {
-                            color: settings.colors.gray[300]
-                        },
-                        pointLabels: {
-                            fontSize: 14
-                        }
-                    },
-                    tooltips: {
-                        callbacks: {
-                            label: function (a, e) {
-                                var t = e.datasets[a.datasetIndex].label || "",
-                                    o = a.yLabel,
-                                    r = "";
-                                return 1 < e.datasets.length && (r += '<span class="popover-body-label mr-auto">' + t + "</span>"), r += '<span class="popover-body-value">' + o + " points</span>"
-                            }
-                        }
-                    }
-                }, options)
-
-                var data = {
-                    labels: ["JavaScript", "HTML", "Flinto", "Vue.js", "Sketch", "Priciple", "CSS", "Angular"],
-                    datasets: [{
-                        label: "Experience IQ",
-                        data: [30, 35, 33, 32, 31, 30, 28, 36],
-                        pointHoverBorderColor: settings.colors.success[400],
-                        pointHoverBackgroundColor: settings.colors.white,
-                        borderJoinStyle: 'bevel',
-                        lineTension: .1
-                    }]
-                }
-
-                Charts.create(id, type, options, data)
-            }
-
-            // Create Chart
-            WeekIQChart('#iqChart')
-            TopicIQChart('#topicIqChart')
-
-        })()
-    </script>
+	
+<body class="hold-transition theme-primary bg-img " style="background-image: url(/login/assets/bg-14.jpg)">
+	
+	<div class="container h-p100">
+		<div class="row align-items-center justify-content-md-center h-p100">	
+			
+			<div class="col-12">
+				<div class="row justify-content-center g-0">
+					<div class="col-lg-5 col-md-5 col-12">
+						<div class="bg-white rounded10 shadow-lg">
+							<div class="content-top-agile p-20 pb-0">
+								<h1 class="text-primary fw-600">Cooding</h1>
+								<p class="mb-0 text-fade">Iniciar sesión</p>							
+							</div>
+							<div class="p-40">
+							
+
+								<div class="col-12 text-center">
+									<a href="/login/google" class="google btn">
+										<i class="fa fa-google fa-fw"></i> Login with Google
+									  </a>
+								</div>
+
+
+							
+							
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
 
 </body>
-
 </html>
